@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+
+        }
+
+        nav {
+            height: 65px;
+            width: 100%;
+            /* background-color: blue; */
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        }
+
+        nav img {
+            width: 200px;
+            margin: 15px 0px 0px 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        .button-1:hover {
+            background-color: white;
+            color: rgb(98, 50, 189);
+            border: 1px solid rgb(98, 50, 189);
+        }
+
+        .button-2:hover {
+            background-color: white;
+            color: rgb(98, 50, 189);
+            border: 1px solid rgb(98, 50, 189);
+        }
+
+        .button-1 {
+            color: white;
+            background-color: rgb(98, 50, 189);
+            float: right;
+            margin: 20px 20px 0px 0px;
+            height: 30px;
+            width: 70px;
+            text-align: center;
+            border-radius: 3px;
+            font-size: 17px;
+            padding-top: 3px;
+        }
+
+        .button-2 {
+            color: white;
+            background-color: rgb(98, 50, 189);
+            /* float: right; */
+            height: 30px;
+            /* width: 100px; */
+            text-align: center;
+            border-radius: 3px;
+            font-size: 17px;
+            padding: 7px 5px 7px 5px;
+
+        }
+
+        section {
+            min-height: 750px;
+            padding: 10px;
+
+        }
+
+        #presentation {
+            background-color: rgb(241, 240, 247);
+        }
+
+        #presentation .pousse {
+            margin-bottom: 55px;
+            line-height: 20px;
+        }
+
+        #presentation h1 {
+            /* text-transform: uppercase; */
+            font-style: normal;
+            font-size: 33px;
+        }
+
+        span {
+            color: rgb(98, 50, 189);
+
+        }
+
+        #presentation img {
+            width: 300px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        #skills {
+            /* background-color: yellow; */
+        }
+
+        .skill-item {
+            min-height: 200px;
+            width: 100%;
+            background-color: rgb(236, 235, 238);
+            margin: 17px auto;
+            border-radius: 10px;
+            /* margin-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 10px;
+            border-radius: 9px; */
+            /* padding: 1cap; */
+            /* padding: 10px; */
+        }
+
+        .skill-item:hover {
+            border-bottom: 3px solid rgb(98, 50, 189);
+        }
+
+        .skill-item img {
+            height: 70px;
+            width: 70px;
+            background-color: white;
+            border-radius: 10px;
+            margin: 15px 0px 0px 22px;
+
+
+        }
+
+        .skill-item h2 {
+            font-size: 30px;
+            margin-left: 20px;
+
+        }
+
+        .expertise {
+            font-size: 30px;
+        }
+
+        .skill-item p {
+            font-size: 20px;
+            max-width: 90%;
+            margin-left: 20px;
+        }
+
+        #aboutme {
+            background-color: rgb(236, 235, 238);
+
+        }
+
+        #aboutme h2 {
+            font-size: 30px;
+        }
+
+        #aboutme p {
+            line-height: 19px;
+            font-size: 17px;
+        }
+
+        #aboutme img {
+            width: 320px;
+            margin-top: 17px;
+            margin-left: 80px;
+        }
+
+        #myportfolio {
+            /* background-color: pink; */
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: rgb(247, 244, 246);
+        }
+
+        #myportfolio h2 {
+            font-size: 30px;
+        }
+
+        .button-3 {
+            color: white;
+            background-color: rgb(240, 47, 160);
+            float: right;
+            height: 30px;
+            /* width: 100px; */
+            text-align: center;
+            border-radius: 3px;
+            font-size: 17px;
+            padding: 7px 5px 7px 5px;
+            margin-top: 17px;
+
+
+        }
+
+        .button-3:hover {
+            background-color: white;
+            color: rgb(218, 100, 119);
+            border: 1px solid pink;
+        }
+
+        .display {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #myportfolio p {
+            font-size: 18px;
+            color: #020108d2;
+        }
+
+        .Portfolio-item {
+            min-height: 600px;
+            /* border: 2px solid purple; */
+            border-radius: 10px;
+            margin: 10px auto;
+            background-color: white;
+            margin-top: 30px;
+
+        }
+
+        .Portfolio-item img {
+            width: 100%;
+
+        }
+
+        .Portfolio-item a {
+            /* background-color: aqua; */
+            padding: 20px 5px 10px 5px;
+            color: black;
+            /* background-color: rgb(100, 63, 15); */
+            border-bottom: 2px solid purple;
+            margin-left: 20px;
+
+
+
+        }
+
+        .Portfolio-item p {
+            margin-left: 20px;
+        }
+
+        .Portfolio-item h2 {
+            margin-left: 20px;
+        }
+
+        .Portfolio-item a img {
+            width: 30px;
+            /* margin-top: 40px; */
+
+
+        }
+
+        #testimonials {
+            background-color: rgb(233, 233, 241);
+        }
+
+        #testimonials h2 {
+            font-size: 35px;
+        }
+
+        .temoin-item {
+            border: solid blue 1px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        .temoin-item .description {
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+        .temoin-item .stars {
+            height: 28px;
+        }
+
+        .person-div {
+            display: flex;
+            align-items: center;
+            /* justify-content: ; */
+        }
+
+        .person-div img {
+            width: 70px;
+            height: 70px;
+            margin-right: 20px;
+        }
+
+        .person-name {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #contact {
+            /* background-color: black; */
+
+        }
+
+        #contact p {
+            text-align: center;
+        }
+
+        #contact h2 {
+            text-align: center;
+        }
+
+
+        .input-div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-div input,
+        .input-div select {
+            background-color: white;
+            border: 1px purple solid;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 42px;
+            border-radius: 5px;
+        }
+
+        .input-div textarea {
+            border: 1px purple solid;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+
+        }
+
+        /* .input-div select{
+            border: 1px purple solid;
+            margin-top: 10px;
+            height: 42px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+
+         */
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="https://assets-global.website-files.com/62f375fa349867308a2e90dc/63030f03c32fa7cc10215a72_Logo.webp"
+            alt="">
+        <a class="button-1" href="#contact">
+            Contact
+        </a>
+
+
+    </nav>
+
+    <section id="presentation">
+        <p>Salut, Je suis Amadou Diallo</p>
+        <h1> <span>je cree des produits du design</span> <br> et de l'experience de marque</h1>
+        <p class="pousse"> Lorem ipsum sit amet
+            consectetur adipisicing elit. Culpa impedit mollitia, <br> modi dicta doloremque
+
+            dolore debitis officiis magni ad delectus.</p>
+        <a href="#" class="button-2">Contactez moi</a>
+        <img src="https://assets-global.website-files.com/62f375fa349867308a2e90dc/63030ec6b0ee91d6920711d1_Header%20Image-p-1080.webp"
+            alt="">
+    </section>
+    <section id="skills">
+        <p>Mes compétences</p>
+        <h2 class="expertise">Mon expertise</h2>
+        <div class="skill-item">
+            <img src="https://assets-global.website-files.com/62f375fa349867308a2e90dc/63030ef9fa748227f3a97612_product-chain%201.webp"
+                alt="">
+            <h2>Branding & Logo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nam quaerat similique eaque quis
+                perferendis ab facere ratione quo, facilis vitae ducimus eius dolor incidunt ullam accusantium
+                blanditiis veritatis et!</p>
+        </div>
+        <div class="skill-item">
+            <img src="https://assets-global.website-files.com/62f375fa349867308a2e90dc/63030ef9dac694ad05cefefa_tag%201.webp"
+                alt="">
+            <h2>Branding & Logo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nam quaerat similique eaque quis
+                perferendis ab facere ratione quo, facilis vitae ducimus eius dolor incidunt ullam accusantium
+                blanditiis veritatis et!</p>
+        </div>
+        <div class="skill-item">
+            <img src="https://assets-global.website-files.com/62f375fa349867308a2e90dc/63030ef9f4c9142f427f5bc3_feather-pen%201.webp"
+                alt="">
+            <h2>Branding & Logo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nam quaerat similique eaque quis
+                perferendis ab facere ratione quo, facilis vitae ducimus eius dolor incidunt ullam accusantium
+                blanditiis veritatis et!</p>
+        </div>
+        <div class="skill-item">
+            <img src="https://assets-global.website-files.com/62f375fa349867308a2e90dc/63030ef9c32fa75cf1215a5e_feather-pen%201-1.webp"
+                alt="">
+            <h2>Branding & Logo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nam quaerat similique eaque quis
+                perferendis ab facere ratione quo, facilis vitae ducimus eius dolor incidunt ullam accusantium
+                blanditiis veritatis et!</p>
+        </div>
+
+    </section>
+    <section id="aboutme">
+
+        <img src="https://assets-global.website-files.com/62f375fa349867308a2e90dc/63070b693f1e5efe3cd77c9e_About%20Me-p-1080.png"
+            alt="">
+        <p>A propos</p>
+        <h2>A propos de moi</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ea! Molestias impedit dolores non. Eaque sed,
+            veniam ut quo harum molestiae ad repellat eius voluptates. Provident temporibus maxime ipsam asperiores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium corrupti veniam qui, ex quaerat ab
+            repudiandae accusamus. Sunt provident hic eum </p>
+    </section>
+    <section id="myportfolio">
+        <p>
+            projets recent
+        </p>
+        <div class="display">
+            <h2>
+                Mon Portfolio
+            </h2>
+            <a href="https://www.youtube.com/?app=desktop&hl=fr&gl=MA" target="_blank" class="button-3">Visit My
+                Dribbble </a>
+        </div>
+        <div class="Portfolio-item">
+            <img src="https://assets-global.website-files.com/630345fdf55aa7a68d06e94e/63034d85aa9085069346fe89_Image.png"
+                alt="">
+            <h2>
+                Ahuse
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse varius enim in eros.
+            </p>
+            <a href="">
+                voir dans dribbble <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFWwWdpVDYUqrizLYNN2iftaIJo_NcNu17xQ&s"
+                    alt="">
+            </a>
+
+
+
+
+
+        </div>
+        <div class="Portfolio-item">
+            <img src="https://assets-global.website-files.com/630345fdf55aa7a68d06e94e/63034d85aa9085069346fe89_Image.png"
+                alt="">
+            <h2>
+                tableau de bord de l'appli
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse varius enim in eros.
+            </p>
+            <a href="">
+                voir dans dribbble <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFWwWdpVDYUqrizLYNN2iftaIJo_NcNu17xQ&s"
+                    alt="">
+            </a>
+
+
+
+
+
+        </div>
+        <div class="Portfolio-item">
+            <img src="https://assets-global.website-files.com/630345fdf55aa7a68d06e94e/63034e00aa908502a547067d_Image-1.png"
+                alt="">
+            <h2>
+                loyer facile
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse varius enim in eros.
+            </p>
+            <a href="">
+                voir dans dribbble <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFWwWdpVDYUqrizLYNN2iftaIJo_NcNu17xQ&s"
+                    alt="">
+            </a>
+
+
+
+
+
+        </div>
+
+
+    </section>
+    <section id="testimonials">
+        <p>Retour Clients</p>
+        <h2>Témoignages clients</h2>
+        <div class="temoin-item">
+            <img class="stars"
+                src="https://assets-global.website-files.com/62f375fa349867308a2e90dc/63030f0ab0d76c7a3b435330_Stars.png"
+                alt="">
+            <p class="description">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus itaque
+                officiis totam iusto reprehenderit fugit possimus odio ducimus! Sed error quae dolores adipisci
+                quibusdam nisi eveniet neque necessitatibus libero est!"</p>
+
+            <div class="person-div">
+                <img src="https://assets-global.website-files.com/62f375fa349867308a2e90dc/63030f0a42cbe2bf46efca08_Avatar%20Image.webp"
+                    alt="">
+                <div>
+                    <p class="person-name">Richard Bathiebo</p>
+                    <p>MoussaTech</p>
+                </div>
+            </div>
+        </div>
+        <div class="temoin-item">
+            <img class="stars"
+                src="https://assets-global.website-files.com/62f375fa349867308a2e90dc/63030f0ab0d76c7a3b435330_Stars.png"
+                alt="">
+            <p class="description">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus itaque
+                officiis totam iusto reprehenderit fugit possimus odio ducimus! Sed error quae dolores adipisci
+                quibusdam nisi eveniet neque necessitatibus libero est!"</p>
+
+            <div class="person-div">
+                <img src="https://assets-global.website-files.com/62f375fa349867308a2e90dc/63030f0a2ea56e4e8a33fc6b_Avatar%20Image-1.webp"
+                    alt="">
+                <div>
+                    <p class="person-name">Richard Bathiebo</p>
+                    <p>MoussaTech</p>
+                </div>
+            </div>
+        </div>
+        <div class="temoin-item">
+            <img class="stars"
+                src="https://assets-global.website-files.com/62f375fa349867308a2e90dc/63030f0ab0d76c7a3b435330_Stars.png"
+                alt="">
+            <p class="description">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus itaque
+                officiis totam iusto reprehenderit fugit possimus odio ducimus! Sed error quae dolores adipisci
+                quibusdam nisi eveniet neque necessitatibus libero est!"</p>
+
+            <div class="person-div">
+                <img src="https://assets-global.website-files.com/62f375fa349867308a2e90dc/63030f0aa0f28475f0dcd479_Avatar%20Image-2.webp"
+                    alt="">
+                <div>
+                    <p class="person-name">Richard Bathiebo</p>
+                    <p>MoussaTech</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p>Prendre contact</p>
+        <h2>Contactez-moi</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+        </p>
+
+        <form action="">
+            <div class="input-div">
+                <label>Prénom</label>
+                <input placeholder="" type="text">
+            </div>
+            <div class="input-div">
+                <label>Nom</label>
+                <input placeholder="" type="text">
+            </div>
+            <div class="input-div">
+                <label>Email</label>
+                <input placeholder="" type="text">
+            </div>
+            <div class="input-div">
+                <label>Numéro de téléphone</label>
+                <input placeholder="" type="text">
+            </div>
+            <div class="input-div">
+                <label>Choisir un sujet</label>
+                <select name="pets" id="pet-select">
+                    <option value="">--Sélectionner--</option>
+                    <option value="spider">Site web</option>
+                    <option value="goldfish">Application mobile</option>
+                    <option value="goldfish">Design UI</option>
+                    <option value="goldfish">Flyers/Affiche</option>
+                </select>
+                <!-- <input placeholder="" type="text"> -->
+            </div>
+            <div class="input-div">
+                <label>Message</label>
+                <!-- <textarea  rows="2" cols="2">
+                Entrez votre message
+                </textarea> -->
+                <textarea name="textarea" rows="10" cols="50">Entrez votre message</textarea>
+
+            </div>
+
+            <div class="">
+                <label>J'accepte les termes</label>
+                <input type="checkbox" placeholder="" type="text">
+            </div>
+
+        </form>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
